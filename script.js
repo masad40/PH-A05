@@ -2,7 +2,7 @@
 // heart function
 function heartNumber(id) {
     const heartValue = document.getElementById(id).innerText;
-    return parseInt(heartValue) || 0;
+    return parseInt(heartValue);
 }
 
 let hearts = document.getElementsByClassName("heart");
@@ -20,7 +20,7 @@ function copyNumber(id) {
     let text = document.getElementById(id).innerText;
     navigator.clipboard.writeText(text);
     alert("Copied " + text);
-    let copyCount = parseInt(document.getElementById("copy-count").innerText) || 0;
+    let copyCount = parseInt(document.getElementById("copy-count").innerText);
     document.getElementById("copy-count").innerText = copyCount + 1;
 }
 
