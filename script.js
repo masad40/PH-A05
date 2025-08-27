@@ -45,7 +45,7 @@ for (let i = 1; i <= 9; i++) {
             let coin = parseInt(document.getElementById("coin").innerText);
 
             if (coin >= 20) {
-                alert("Calling" + name + number)
+                alert("Calling " + name +" "+ number)
 
                 let newCoin = coin - 20;
                 document.getElementById("coin").innerText = newCoin;
