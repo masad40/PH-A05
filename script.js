@@ -12,14 +12,14 @@ for (let i = 0; i < hearts.length; i++) {
         let heartValue = heartNumber("heart-count");
         let heartUp = heartValue + 1;
         document.getElementById("heart-count").innerText = heartUp;
-        alert("Number added...");
+        alert(" ➕ Number added...");
     });
 }
 // copy number function
 function copyNumber(id) {
     let text = document.getElementById(id).innerText;
     navigator.clipboard.writeText(text);
-    alert("Copied " + text);
+    alert("©️ Copied -- " + text);
     let copyCount = parseInt(document.getElementById("copy-count").innerText);
     document.getElementById("copy-count").innerText = copyCount + 1;
 }
@@ -45,7 +45,7 @@ for (let i = 1; i <= 9; i++) {
             let coin = parseInt(document.getElementById("coin").innerText);
 
             if (coin >= 20) {
-                alert("Calling " + name +" "+ number)
+                alert(` 📞 Calling.... \n${name} ${number}`);
 
                 let newCoin = coin - 20;
                 document.getElementById("coin").innerText = newCoin;
